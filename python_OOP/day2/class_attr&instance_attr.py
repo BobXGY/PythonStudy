@@ -9,7 +9,7 @@ class Student(object):
     name = 'Student'    # name是一个类属性
 
     def __init__(self, name: str='stu_name'):
-        self.name = name        # name是一个实例属性
+        self.name = name  # self.name是一个实例属性
         Student.count += 1
 
 
