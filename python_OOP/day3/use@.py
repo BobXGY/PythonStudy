@@ -12,8 +12,6 @@ def log(func):
 
 
 # 从这里开始向下阅读
-
-
 @log
 def now():              # 假设有一函数now()
     print('2018-9-10')
