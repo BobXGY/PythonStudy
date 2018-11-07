@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
 def classifier(testdata: dict, pdict: dict):
     outlook = 'outlook=' + testdata["outlook"]
     temp = 'temp=' + testdata["temp"]

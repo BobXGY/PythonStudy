@@ -28,6 +28,7 @@
         <list>
           <option value="turtle.fillcolor" />
           <option value="turtle.*" />
+          <option value="set.__getitem__" />
         </list>
       </option>
     </inspection_tool>
