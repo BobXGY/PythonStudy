@@ -7,7 +7,7 @@ import jieba
 
 txt = open('threekingdoms.txt', mode='r', encoding='utf-8').read()
 allWords = jieba.lcut(txt)
-print(allWords)
+# print(allWords)
 wordCounts = {}
 paichu = ['将军', '却说', '二人', '不可', '荆州', '不能', '如此',
           '商议', '如何', '主公', '军士', '左右', '军马', '引兵',

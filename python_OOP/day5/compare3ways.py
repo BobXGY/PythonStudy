@@ -64,7 +64,7 @@ def mt(number, *args):
 
 def main():
     # 计算1-n的平方、立方、四次方的和
-    number = 1000000
+    number = 10000000
 
     time_normalstart = time.time()
     normal_res = normal(number)

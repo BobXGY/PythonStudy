@@ -12,7 +12,7 @@ class Myobj(object):
     def __init__(self, name):
         self.__name = name
         Myobj.obj_counts += 1
-        # 强调self关键字是指当前的实体，而不是这个实体实体所属的类
+        # 强调:self关键字是指当前的对象实体，而不是这个实体所属的类
         # 因此在这里操作类变量不能写成self.obj_counts
 
     def __del__(self):
@@ -23,6 +23,7 @@ if __name__ == '__main__':
     o1 = Myobj('bob')
     o2 = Myobj('kate')
     o3 = Myobj('ada')
+
     o3.obj_counts = 5
     # 这个赋值语句相当于在实体o3中创建了一个成员变量obj_counts并赋值为5
     # 不会对类变量 Myobj.obj_counts 造成任何影响
