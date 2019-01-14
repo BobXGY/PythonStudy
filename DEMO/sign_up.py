@@ -5,6 +5,7 @@
 # @create time 2019/1/6 14:50
 # @file sign_up.py
 import requests
+import os
 
 if __name__ == '__main__':
     url = 'https://kiwifree.pw/user/checkin'
@@ -19,6 +20,7 @@ if __name__ == '__main__':
                              'AppleWebKit/537.36 (KHTML, like Gecko) '
                              'Chrome/71.0.3578.98 Safari/537.36'
                }
+    print("正在连接到" + url + "...")
     resp = requests.post(url=url, cookies=my_cookies, headers=headers)
 
     if resp.json()['msg'] == '您似乎已经续命过了...':
@@ -28,4 +30,4 @@ if __name__ == '__main__':
         print('获得流量：' + gain)
     else:
         print(resp.content)
-    pass
+    os.system("pause")
