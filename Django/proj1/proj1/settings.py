@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application definit
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myblog'        # 添加创建的app名称
 ]
 
 MIDDLEWARE = [
@@ -73,6 +75,7 @@ WSGI_APPLICATION = 'proj1.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+# 数据库配置方法官方文档
 
 DATABASES = {
     'default': {
@@ -117,5 +120,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+# 静态文件的路径
 
 STATIC_URL = '/static/'
